@@ -23,8 +23,6 @@
       <h1 class="text-2xl font-bold">Good Anchor Fellowship</h1>
       <nav class="space-x-4">
         <a href="#fellows" class="hover:underline">Fellows</a>
-        <a href="#modules" class="hover:underline">Modules</a>
-        <a href="#resources" class="hover:underline">Resources</a>
       </nav>
     </div>
   </header>
@@ -32,45 +30,113 @@
   <main class="max-w-6xl mx-auto px-4 py-10 space-y-12">
     <section id="fellows">
       <h2 class="text-3xl font-semibold text-green-800 mb-6">Meet the Fellows</h2>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <!-- LaCreshia -->
-        <div class="bg-white shadow-xl rounded-xl p-6 border border-green-100">
-          <h3 class="text-xl font-bold text-green-900">LaCreshia</h3>
-          <p class="mt-2 text-sm">Community Organizer & Cooperative Developer</p>
-          <p class="mt-4 text-sm text-gray-700">
-            Organizer of the Chicago Juneteenth campaign and cooperative developer with Upside Down Consulting,
-            supporting formerly incarcerated worker-owners. Leads citywide reparation efforts and grassroots organizing for Black cultural memory.
-          </p>
-        </div>
-        <!-- Major -->
-        <div class="bg-white shadow-xl rounded-xl p-6 border border-green-100">
-          <h3 class="text-xl font-bold text-green-900">Major Purnell</h3>
-          <p class="mt-2 text-sm">Entrepreneur & Faith-Based Anchor</p>
-          <p class="mt-4 text-sm text-gray-700">
-            Business consultant helping over 500 entrepreneurs through The Hatchery and more. Envisions a West Side family center
-            with shared ownership, recreation, and youth engagement. Aims to become a long-term economic anchor.
-          </p>
-        </div>
-        <!-- Mercedes -->
-        <div class="bg-white shadow-xl rounded-xl p-6 border border-green-100">
-          <h3 class="text-xl font-bold text-green-900">Mercedes Pickett</h3>
-          <p class="mt-2 text-sm">Technologist & Youth Organizer</p>
-          <p class="mt-4 text-sm text-gray-700">
-            Founder of Earth Remedies and ER Data Solutions. Leads a youth-powered database mapping ecosystem resources and needs.
-            Advocates for community ownership of data and decentralized tech infrastructure rooted in equity and Black futures.
-          </p>
-        </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button class="px-4 py-2 bg-green-200 text-green-900 rounded-lg filter-btn" data-category="All">All</button>
+        <button class="px-4 py-2 bg-green-200 text-green-900 rounded-lg filter-btn" data-category="Real Estate">Real Estate</button>
+        <button class="px-4 py-2 bg-green-200 text-green-900 rounded-lg filter-btn" data-category="Tech">Tech</button>
+        <button class="px-4 py-2 bg-green-200 text-green-900 rounded-lg filter-btn" data-category="Advocacy">Advocacy</button>
+        <button class="px-4 py-2 bg-green-200 text-green-900 rounded-lg filter-btn" data-category="Healing & Wellness">Healing & Wellness</button>
       </div>
-    </section>
 
-    <section id="modules">
-      <h2 class="text-2xl font-semibold text-green-800 mt-12 mb-4">Learning Modules (Coming Soon)</h2>
-      <p class="text-sm text-gray-600">This section will include videos, slides, and interactive sessions powered by Airtable.</p>
-    </section>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Samantha Taylor -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Advocacy">
+  <img src="https://via.placeholder.com/96?text=S" alt="Samantha Taylor headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Samantha Taylor</h3>
+  <p class="text-sm text-gray-600">Advocacy • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Community advocate focused on urban policy and youth engagement in West Garfield Park.</p>
+</div>
 
-    <section id="resources">
-      <h2 class="text-2xl font-semibold text-green-800 mt-12 mb-4">Resource Library (Coming Soon)</h2>
-      <p class="text-sm text-gray-600">Curated tools, articles, and downloads will be listed here to support fellows' work.</p>
+<!-- Mercedes Pickett -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Healing & Wellness">
+  <img src="https://via.placeholder.com/96?text=M" alt="Mercedes Pickett headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Mercedes Pickett</h3>
+  <p class="text-sm text-gray-600">Healing & Wellness • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Healing practitioner and organizer working at the intersection of wellness and community stewardship.</p>
+</div>
+
+<!-- Chiquita Lewis -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Tech">
+  <img src="https://via.placeholder.com/96?text=C" alt="Chiquita Lewis headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Chiquita Lewis</h3>
+  <p class="text-sm text-gray-600">Tech • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Engineer and educator empowering youth through coding and digital equity initiatives.</p>
+</div>
+
+<!-- Sharif Walker -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Real Estate">
+  <img src="https://via.placeholder.com/96?text=SW" alt="Sharif Walker headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Sharif Walker</h3>
+  <p class="text-sm text-gray-600">Real Estate • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Advocate for community-led real estate projects and cooperative housing solutions.</p>
+</div>
+
+<!-- Martin Coffer -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Advocacy">
+  <img src="https://via.placeholder.com/96?text=MC" alt="Martin Coffer headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Martin Coffer</h3>
+  <p class="text-sm text-gray-600">Advocacy • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Organizer supporting affordable housing and transit access across Chicago.</p>
+</div>
+
+<!-- Jerry Johnson -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Tech">
+  <img src="https://via.placeholder.com/96?text=JJ" alt="Jerry Johnson headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Jerry Johnson</h3>
+  <p class="text-sm text-gray-600">Tech • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Digital strategist using platforms to elevate civic stories in West Garfield Park.</p>
+</div>
+
+<!-- Greg Matthews -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Real Estate">
+  <img src="https://via.placeholder.com/96?text=GM" alt="Greg Matthews headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Greg Matthews</h3>
+  <p class="text-sm text-gray-600">Real Estate • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Developer focused on community-owned land trusts and anti-displacement efforts.</p>
+</div>
+
+<!-- LaCreshia Birts -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Healing & Wellness">
+  <img src="https://via.placeholder.com/96?text=L" alt="LaCreshia Birts headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">LaCreshia Birts</h3>
+  <p class="text-sm text-gray-600">Healing & Wellness • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Cultural healer bringing ancestral practices into youth and family wellness work.</p>
+</div>
+
+<!-- Vanessa Stokes -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Tech">
+  <img src="https://via.placeholder.com/96?text=V" alt="Vanessa Stokes headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Vanessa Stokes</h3>
+  <p class="text-sm text-gray-600">Tech • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Tech equity leader expanding digital access for youth and elders on the West Side.</p>
+</div>
+
+<!-- Tiffany Sledge -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Real Estate">
+  <img src="https://via.placeholder.com/96?text=T" alt="Tiffany Sledge headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Tiffany Sledge</h3>
+  <p class="text-sm text-gray-600">Real Estate • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Cooperative housing visionary developing community-owned mixed-use projects.</p>
+</div>
+
+<!-- Angela Taylor -->
+<div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Healing & Wellness">
+  <img src="https://via.placeholder.com/96?text=A" alt="Angela Taylor headshot" class="w-24 h-24 rounded-full mx-auto">
+  <h3 class="mt-4 text-xl font-bold text-green-900">Angela Taylor</h3>
+  <p class="text-sm text-gray-600">Healing & Wellness • Madison–Pulaski</p>
+  <p class="mt-2 text-sm text-gray-700">Doula and maternal care advocate centering birth equity and ancestral wisdom.</p>
+</div>
+        <div class="bg-white shadow-xl rounded-xl p-6 border border-green-100" data-category="Healing & Wellness">
+          <img src="https://via.placeholder.com/96?text=S" alt="Samantha Taylor headshot" class="w-24 h-24 rounded-full mx-auto">
+          <h3 class="mt-4 text-xl font-bold text-green-900">Samantha Taylor</h3>
+          <p class="text-sm text-gray-600">Advocacy • Madison–Pulaski</p>
+          <p class="mt-2 text-sm text-gray-700">
+            Chicago-based community advocate focused on equitable urban policy and youth engagement in West Garfield Park.
+          </p>
+        </div>
+        <!-- More fellow cards would follow similarly with updated data-category attributes -->
+      </div>
     </section>
   </main>
 
@@ -79,5 +145,37 @@
       &copy; 2025 Good Anchor Fellowship • Built with care and vision
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        document.querySelectorAll('[data-category]').forEach(card => {
+          if(cat === 'All' || card.dataset.category === cat) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        document.querySelectorAll('[data-category]').forEach(card => {
+          card.style.display = (cat === 'All' || card.dataset.category === card.getAttribute('data-category')) ? 'block' : 'none';
+        });
+        buttons.forEach(b => b.classList.remove('bg-green-900', 'text-white'));
+        btn.classList.add('bg-green-900', 'text-white');
+      });
+    });
+    // Highlight 'All' by default
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.filter-btn[data-category="All"]').classList.add('bg-green-900', 'text-white');
+    });
+  </script>
 </body>
 </html>
