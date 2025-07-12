@@ -176,6 +176,23 @@
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.filter-btn[data-category="All"]').classList.add('bg-green-900', 'text-white');
     });
-  </script>
+  
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      document.querySelectorAll('[data-category]').forEach(card => {
+        card.style.display = (cat === 'All' || card.dataset.category === cat) ? 'block' : 'none';
+      });
+      buttons.forEach(b => b.classList.remove('bg-green-900', 'text-white'));
+      btn.classList.add('bg-green-900', 'text-white');
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const defaultBtn = document.querySelector('.filter-btn[data-category="All"]');
+    defaultBtn?.classList.add('bg-green-900', 'text-white');
+  });
+</script>
 </body>
 </html>
